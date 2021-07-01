@@ -19,9 +19,9 @@ for row in range(1, n + 1):
 if sum(even_nums) == sum(odd_nums):
     union_values = list(odd_nums.union(even_nums))
     print(*union_values, sep=", ")
-if sum(odd_nums) > sum(even_nums):
+elif sum(odd_nums) > sum(even_nums):
     diff_values = list(odd_nums.difference(even_nums))
     print(*diff_values, sep=", ")
-if sum(even_nums) > sum(odd_nums):
+elif sum(even_nums) > sum(odd_nums):
     diff_sym_values = list(odd_nums.symmetric_difference(even_nums))
     print(*diff_sym_values, sep=", ")
